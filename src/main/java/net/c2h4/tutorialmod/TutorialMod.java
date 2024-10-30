@@ -1,6 +1,7 @@
 package net.c2h4.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.c2h4.tutorialmod.block.ModBlocks;
 import net.c2h4.tutorialmod.item.ModCreativeModeTabs;
 import net.c2h4.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -31,8 +32,9 @@ public class TutorialMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
-        modEventBus.addListener(this::commonSetup);
+        ModBlocks.register(modEventBus);
 
+        modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
 

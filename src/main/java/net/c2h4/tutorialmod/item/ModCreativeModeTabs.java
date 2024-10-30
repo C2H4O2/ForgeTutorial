@@ -1,6 +1,7 @@
 package net.c2h4.tutorialmod.item;
 
 import net.c2h4.tutorialmod.TutorialMod;
+import net.c2h4.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,12 @@ public class ModCreativeModeTabs {
                     .displayItems((ItemDisplayParameters, Output) -> {
                         Output.accept(ModItems.SAPPHIRE.get());
                         Output.accept(ModItems.RAW_SAPPHIRE.get());
+
+                        Output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        Output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+
+                        Output.accept(ModBlocks.SAPPHIRE_ORE.get());
+                        Output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
                     })
 
                     .build());
