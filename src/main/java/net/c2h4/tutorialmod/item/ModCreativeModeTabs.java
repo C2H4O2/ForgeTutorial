@@ -20,6 +20,13 @@ public class ModCreativeModeTabs {
                     .displayItems((ItemDisplayParameters, Output) -> {
                         Output.accept(ModItems.SAPPHIRE.get());
                         Output.accept(ModItems.RAW_SAPPHIRE.get());
+                        Output.accept(ModItems.STRAWBERRY.get());
+                        Output.accept(ModItems.PINE_CONE.get());
+
+
+                        Output.accept(ModItems.METAL_DETECTOR.get());
+
+                        Output.accept(ModBlocks.SOUND_BLOCK.get());
 
                         Output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         Output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
