@@ -23,8 +23,14 @@ public class ModCreativeModeTabs {
                         Output.accept(ModItems.STRAWBERRY.get());
                         Output.accept(ModItems.PINE_CONE.get());
 
-
                         Output.accept(ModItems.METAL_DETECTOR.get());
+                        Output.accept(ModItems.SAPPHIRE_STAFF.get());
+
+                        Output.accept(ModItems.SAPPHIRE_SWORD.get());
+                        Output.accept(ModItems.SAPPHIRE_PICKAXE.get());
+                        Output.accept(ModItems.SAPPHIRE_AXE.get());
+                        Output.accept(ModItems.SAPPHIRE_SHOVEL.get());
+                        Output.accept(ModItems.SAPPHIRE_HOE.get());
 
                         Output.accept(ModBlocks.SOUND_BLOCK.get());
 
@@ -33,6 +39,18 @@ public class ModCreativeModeTabs {
 
                         Output.accept(ModBlocks.SAPPHIRE_ORE.get());
                         Output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                        Output.accept(ModBlocks.SAPPHIRE_STAIRS.get());
+                        Output.accept(ModBlocks.SAPPHIRE_SLAB.get());
+                        Output.accept(ModBlocks.SAPPHIRE_BUTTON.get());
+                        Output.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
+
+                        Output.accept(ModBlocks.SAPPHIRE_FENCE.get());
+                        Output.accept(ModBlocks.SAPPHIRE_FENCE_GATE.get());
+                        Output.accept(ModBlocks.SAPPHIRE_WALL.get());
+
+                        Output.accept(ModBlocks.SAPPHIRE_DOOR.get());
+                        Output.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
+
                     })
 
                     .build());

@@ -6,6 +6,7 @@ import net.c2h4.tutorialmod.block.ModBlocks;
 import net.c2h4.tutorialmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -38,6 +39,52 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('S', ModItems.SAPPHIRE.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_SWORD.get())
+                .pattern(" S ")
+                .pattern(" S ")
+                .pattern(" # ")
+                .define('S', ModItems.SAPPHIRE.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_SHOVEL.get())
+                .pattern(" S ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('S', ModItems.SAPPHIRE.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_AXE.get())
+                .pattern("SS ")
+                .pattern("S# ")
+                .pattern(" # ")
+                .define('S', ModItems.SAPPHIRE.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_HOE.get())
+                .pattern("SS ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .define('S', ModItems.SAPPHIRE.get())
+                .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
     }
 

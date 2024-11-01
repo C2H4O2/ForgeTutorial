@@ -31,7 +31,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SAPPHIRE_BLOCK.get(),
                         ModBlocks.RAW_SAPPHIRE_BLOCK.get(),
                         ModBlocks.SAPPHIRE_ORE.get(),
-                        ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get()
+                        ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
+                        ModBlocks.SAPPHIRE_DOOR.get(),
+                        ModBlocks.SAPPHIRE_STAIRS.get(),
+                        ModBlocks.SAPPHIRE_SLAB.get(),
+                        ModBlocks.SAPPHIRE_FENCE.get(),
+                        ModBlocks.SAPPHIRE_WALL.get(),
+                        ModBlocks.SAPPHIRE_FENCE_GATE.get(),
+                        ModBlocks.SAPPHIRE_BUTTON.get(),
+                        ModBlocks.SAPPHIRE_PRESSURE_PLATE.get(),
+                        ModBlocks.SAPPHIRE_TRAPDOOR.get()
                 );
         //this.tag(BlockTags.NEEDS_STONE_TOOL);
 
@@ -39,12 +48,30 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SAPPHIRE_BLOCK.get(),
                         ModBlocks.RAW_SAPPHIRE_BLOCK.get(),
                         ModBlocks.SAPPHIRE_ORE.get(),
-                        ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get()
+                        ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
+
+                        ModBlocks.SAPPHIRE_DOOR.get(),
+                        ModBlocks.SAPPHIRE_STAIRS.get(),
+                        ModBlocks.SAPPHIRE_SLAB.get(),
+                        ModBlocks.SAPPHIRE_FENCE.get(),
+                        ModBlocks.SAPPHIRE_WALL.get(),
+                        ModBlocks.SAPPHIRE_FENCE_GATE.get(),
+                        ModBlocks.SAPPHIRE_BUTTON.get(),
+                        ModBlocks.SAPPHIRE_PRESSURE_PLATE.get(),
+                        ModBlocks.SAPPHIRE_TRAPDOOR.get()
+
                 );
 
         //this.tag(BlockTags.NEEDS_DIAMOND_TOOL);
 
         //this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
 
+        //this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL);
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.SAPPHIRE_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.SAPPHIRE_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.SAPPHIRE_WALL.get());
     }
 }

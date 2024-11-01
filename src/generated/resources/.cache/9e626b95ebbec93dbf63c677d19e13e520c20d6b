@@ -1,4 +1,7 @@
-// 1.20.1	2024-10-31T14:54:31.9828049	Tags for minecraft:block mod id tutorialmod
-66bf1a901c39fd6e9facafcb4080d1f189f91c2f data/minecraft/tags/blocks/mineable/pickaxe.json
-66bf1a901c39fd6e9facafcb4080d1f189f91c2f data/minecraft/tags/blocks/needs_iron_tool.json
+// 1.20.1	2024-11-01T21:02:17.181036	Tags for minecraft:block mod id tutorialmod
+eb9c3bd4f434cd2ee198618689887868a03fc824 data/minecraft/tags/blocks/fences.json
+0f23036eb868569b86c1fbde92de4c816b9df411 data/minecraft/tags/blocks/fence_gates.json
+9c653ee63a07ac08ef7b3cf4e87a4f5668354652 data/minecraft/tags/blocks/mineable/pickaxe.json
+9c653ee63a07ac08ef7b3cf4e87a4f5668354652 data/minecraft/tags/blocks/needs_iron_tool.json
+39afac99ef2666de5a9686ccfc15e6f7611922c8 data/minecraft/tags/blocks/walls.json
 69af902c7eaf8333fb56d791d33a9b01d6e40b62 data/tutorialmod/tags/blocks/metal_detector_valuables.json
