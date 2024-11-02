@@ -3,6 +3,7 @@ package net.c2h4.tutorialmod.item;
 import net.c2h4.tutorialmod.TutorialMod;
 import net.c2h4.tutorialmod.item.custom.FuelItem;
 import net.c2h4.tutorialmod.item.custom.MetalDetectorItem;
+import net.c2h4.tutorialmod.item.custom.ModArmorItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -41,6 +42,15 @@ public class ModItems {
             () -> new ShovelItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
             () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> SAPPHIRE_CHESTPLATE = ITEMS.register("sapphire_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings",
+            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
+            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
