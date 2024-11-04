@@ -1,4 +1,4 @@
-// 1.20.1	2024-11-01T19:57:37.6019896	Loot Tables
+// 1.20.1	2024-11-02T20:56:12.5158935	Loot Tables
 3655045aeb4e2ae62e9069b0db07927965a12389 data/tutorialmod/loot_tables/blocks/deepslate_sapphire_ore.json
 81e9322ae4c5141fd110a8f87cc92d7af008fd1e data/tutorialmod/loot_tables/blocks/raw_sapphire_block.json
 d844cbb192590a5e4278fd1a5c5906e40c594e24 data/tutorialmod/loot_tables/blocks/sapphire_block.json
@@ -13,3 +13,4 @@ e6a0be1d3f09fb30f5a92e3558eeefa950cfcffd data/tutorialmod/loot_tables/blocks/sap
 b28a6c67228e945ebc84f0e867152b34facd8b16 data/tutorialmod/loot_tables/blocks/sapphire_trapdoor.json
 900d403a6e84cc3d247e16f5dcb1fcf8802436a8 data/tutorialmod/loot_tables/blocks/sapphire_wall.json
 4a8cfacccc2c162b32d7ced097c65185c5c5bc88 data/tutorialmod/loot_tables/blocks/sound_block.json
+1f5745e65cfe5db7b41fcdf352e1a9f3378f9874 data/tutorialmod/loot_tables/blocks/strawberry_crop.json

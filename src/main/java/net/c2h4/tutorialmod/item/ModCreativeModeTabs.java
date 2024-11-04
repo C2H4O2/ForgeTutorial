@@ -23,6 +23,8 @@ public class ModCreativeModeTabs {
                         Output.accept(ModItems.STRAWBERRY.get());
                         Output.accept(ModItems.PINE_CONE.get());
 
+                        Output.accept(ModItems.STRAWBERRY_SEEDS.get());
+
                         Output.accept(ModItems.METAL_DETECTOR.get());
                         Output.accept(ModItems.SAPPHIRE_STAFF.get());
 
