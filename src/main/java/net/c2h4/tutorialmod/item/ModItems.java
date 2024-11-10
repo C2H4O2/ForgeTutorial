@@ -2,10 +2,12 @@ package net.c2h4.tutorialmod.item;
 
 import net.c2h4.tutorialmod.TutorialMod;
 import net.c2h4.tutorialmod.block.ModBlocks;
+import net.c2h4.tutorialmod.entity.ModEntities;
 import net.c2h4.tutorialmod.item.custom.FuelItem;
 import net.c2h4.tutorialmod.item.custom.MetalDetectorItem;
 import net.c2h4.tutorialmod.item.custom.ModArmorItem;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -55,6 +57,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
             () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(),new Item.Properties()));
+
+    public static final RegistryObject<Item> RHINO_SPAWN_EGG = ITEMS.register("rhino_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.RHINO, 0x7e9680, 0xc5d1c5,
+                    new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

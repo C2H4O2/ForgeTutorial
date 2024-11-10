@@ -2,6 +2,7 @@ package net.c2h4.tutorialmod.item;
 
 import net.c2h4.tutorialmod.TutorialMod;
 import net.c2h4.tutorialmod.block.ModBlocks;
+import net.c2h4.tutorialmod.block.entity.ModBlockEntities;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -24,6 +25,7 @@ public class ModCreativeModeTabs {
                         Output.accept(ModItems.PINE_CONE.get());
 
                         Output.accept(ModItems.STRAWBERRY_SEEDS.get());
+                        Output.accept(ModItems.RHINO_SPAWN_EGG.get());
 
                         Output.accept(ModItems.METAL_DETECTOR.get());
                         Output.accept(ModItems.SAPPHIRE_STAFF.get());
@@ -57,6 +59,9 @@ public class ModCreativeModeTabs {
 
                         Output.accept(ModBlocks.SAPPHIRE_DOOR.get());
                         Output.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
+
+                        Output.accept(ModBlocks.CATMINT.get());
+                        Output.accept(ModBlocks.GEM_POLISHING_STATION.get());
 
                     })
 

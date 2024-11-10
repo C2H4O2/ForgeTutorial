@@ -7,6 +7,7 @@
   "item.tutorialmod.pine_cone": "Pine Cone",
   "item.tutorialmod.strawberry_seeds": "Strawberry Seed",
   "item.tutorialmod.sapphire_staff": "Sapphire Staff",
+  "item.tutorialmod.rhino_spawn_egg": "Rhino Spawn Egg",
 
   "item.tutorialmod.sapphire_sword": "Sapphire Sword",
   "item.tutorialmod.sapphire_pickaxe": "Sapphire Pickaxe",
@@ -26,8 +27,6 @@
 
   "block.tutorialmod.sound_block": "Sound Block",
 
-  "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground",
-
   "block.tutorialmod.sapphire_stairs": "Sapphire Stairs",
   "block.tutorialmod.sapphire_slab": "Sapphire Slab",
   "block.tutorialmod.sapphire_button": "Sapphire Button",
@@ -38,6 +37,16 @@
   "block.tutorialmod.sapphire_door": "Sapphire Door",
   "block.tutorialmod.sapphire_trapdoor": "Sapphire Trapdoor",
 
+  "block.tutorialmod.catmint": "Catmint",
+
+  "block.tutorialmod.gem_polishing_station": "Gem Polishing Station",
+
+
+  "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground",
+
+  "entity.minecraft.villager.tutorialmod.soundmaster": "Sound Master",
+
+  "sounds.tutorialmod.metal_detector_found_ore":  "Metal Detector Jingle",
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 
 }

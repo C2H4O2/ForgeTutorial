@@ -2,11 +2,24 @@ package net.c2h4.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.c2h4.tutorialmod.block.ModBlocks;
+import net.c2h4.tutorialmod.block.entity.ModBlockEntities;
+import net.c2h4.tutorialmod.entity.ModEntities;
+import net.c2h4.tutorialmod.entity.client.RhinoRenderer;
+import net.c2h4.tutorialmod.event.ModEvents;
 import net.c2h4.tutorialmod.item.ModCreativeModeTabs;
 import net.c2h4.tutorialmod.item.ModItems;
 import net.c2h4.tutorialmod.loot.ModLootModifiers;
+import net.c2h4.tutorialmod.recipe.ModRecipe;
+import net.c2h4.tutorialmod.screen.GemPolishingStationScreen;
+import net.c2h4.tutorialmod.screen.ModMenuTypes;
+import net.c2h4.tutorialmod.sound.ModSounds;
+import net.c2h4.tutorialmod.villager.ModVillagers;
+import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -36,14 +49,28 @@ public class TutorialMod
         ModBlocks.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
+        ModVillagers.register(modEventBus);
+
+        ModSounds.register(modEventBus);
+        ModEntities.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
+        ModRecipe.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
+        MinecraftForge.EVENT_BUS.register(ModEvents.class);
+
+
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
 
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.CATMINT.getId(), ModBlocks.POTTED_CATMINT);
+        });
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
@@ -64,7 +91,8 @@ public class TutorialMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
+            MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
         }
     }
 }
