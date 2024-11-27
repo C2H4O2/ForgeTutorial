@@ -1,6 +1,7 @@
 package net.c2h4.tutorialmod.datagen;
 
 import net.c2h4.tutorialmod.TutorialMod;
+import net.c2h4.tutorialmod.block.ModBlocks;
 import net.c2h4.tutorialmod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -23,6 +24,19 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.SAPPHIRE_HELMET.get(),
                         ModItems.SAPPHIRE_CHESTPLATE.get(),
                         ModItems.SAPPHIRE_LEGGINGS.get(),
-                        ModItems.SAPPHIRE_BOOTS.get());
+                        ModItems.SAPPHIRE_BOOTS.get(),
+                        ModItems.EMERALD_HELMET.get(),
+                        ModItems.EMERALD_CHESTPLATE.get(),
+                        ModItems.EMERALD_LEGGINGS.get(),
+                        ModItems.EMERALD_BOOTS.get());
+
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.PINE_LOG.get().asItem())
+                .add(ModBlocks.PINE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PINE_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PINE_WOOD.get().asItem());
+
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.PINE_PLANKS.get().asItem());
     }
 }

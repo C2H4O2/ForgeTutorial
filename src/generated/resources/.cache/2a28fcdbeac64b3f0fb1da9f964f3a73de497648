@@ -1,2 +1,4 @@
-// 1.20.1	2024-11-02T18:42:59.21368	Tags for minecraft:item mod id tutorialmod
-2514998bb25494de346fa0d088b7e216d8165efd data/minecraft/tags/items/trimmable_armor.json
+// 1.20.1	2024-11-18T18:05:48.2129945	Tags for minecraft:item mod id tutorialmod
+c2b83641ed55fb63151b60b22efaa8a05b24629b data/minecraft/tags/items/logs_that_burn.json
+6d2298526792ca18d84ed50a4b4d452e95f613e4 data/minecraft/tags/items/planks.json
+514edfcebe8e5c404e2860390193e477c8c57335 data/minecraft/tags/items/trimmable_armor.json

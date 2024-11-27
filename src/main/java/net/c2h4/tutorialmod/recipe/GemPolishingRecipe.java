@@ -27,10 +27,16 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public boolean matches(SimpleContainer pContainer, Level pLevel) {
-        if (pLevel.isClientSide()) {
+        if(pLevel.isClientSide()) {
             return false;
         }
+
         return inputItems.get(0).test(pContainer.getItem(0));
+    }
+
+    @Override
+    public NonNullList<Ingredient> getIngredients() {
+        return inputItems;
     }
 
     @Override
@@ -44,7 +50,7 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
     }
 
     @Override
-    public ItemStack getResultItem(RegistryAccess pregistryAccess) {
+    public ItemStack getResultItem(RegistryAccess pRegistryAccess) {
         return output.copy();
     }
 
@@ -68,7 +74,7 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
         public static final String ID = "gem_polishing";
     }
 
-    public static class Serializer implements  RecipeSerializer<GemPolishingRecipe> {
+    public static class Serializer implements RecipeSerializer<GemPolishingRecipe> {
         public static final Serializer INSTANCE = new Serializer();
         public static final ResourceLocation ID = new ResourceLocation(TutorialMod.MOD_ID, "gem_polishing");
 
@@ -77,11 +83,12 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe, "output"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(pSerializedRecipe, "ingredients");
-            NonNullList<Ingredient> inputs = NonNullList.withSize(1,Ingredient.EMPTY);
+            NonNullList<Ingredient> inputs = NonNullList.withSize(1, Ingredient.EMPTY);
 
-            for (int i = 0; i < inputs.size(); i++) {
+            for(int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
+
             return new GemPolishingRecipe(inputs, output, pRecipeId);
         }
 
@@ -89,7 +96,7 @@ public class GemPolishingRecipe implements Recipe<SimpleContainer> {
         public @Nullable GemPolishingRecipe fromNetwork(ResourceLocation pRecipeId, FriendlyByteBuf pBuffer) {
             NonNullList<Ingredient> inputs = NonNullList.withSize(pBuffer.readInt(), Ingredient.EMPTY);
 
-            for (int i = 0; i < inputs.size(); i++) {
+            for(int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromNetwork(pBuffer));
             }
 

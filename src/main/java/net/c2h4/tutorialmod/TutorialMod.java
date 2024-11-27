@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.c2h4.tutorialmod.block.ModBlocks;
 import net.c2h4.tutorialmod.block.entity.ModBlockEntities;
 import net.c2h4.tutorialmod.entity.ModEntities;
+import net.c2h4.tutorialmod.entity.client.ModBoatRenderer;
 import net.c2h4.tutorialmod.entity.client.RhinoRenderer;
 import net.c2h4.tutorialmod.event.ModEvents;
 import net.c2h4.tutorialmod.item.ModCreativeModeTabs;
@@ -13,10 +14,12 @@ import net.c2h4.tutorialmod.recipe.ModRecipe;
 import net.c2h4.tutorialmod.screen.GemPolishingStationScreen;
 import net.c2h4.tutorialmod.screen.ModMenuTypes;
 import net.c2h4.tutorialmod.sound.ModSounds;
+import net.c2h4.tutorialmod.util.ModWoodTypes;
 import net.c2h4.tutorialmod.villager.ModVillagers;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -91,7 +94,11 @@ public class TutorialMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            Sheets.addWoodType(ModWoodTypes.PINE);
             EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
+            EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+            EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
+            EntityRenderers.register(ModEntities.DICE_PROJECTILE.get(), ThrownItemRenderer::new);
             MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
         }
     }

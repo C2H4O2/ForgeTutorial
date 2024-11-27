@@ -1,0 +1,7 @@
+// 1.20.1	2024-11-22T12:29:28.3773597	Registries
+6e10223d8ca98f02feea2da07585014b7a38b1e4 data/tutorialmod/forge/biome_modifier/add_sapphire_ore.json
+7abbc38508270c3ef909f11615161f9ff69837f7 data/tutorialmod/forge/biome_modifier/add_tree_pine.json
+c5772f2a99ec0a38124ed1bbf7e52c4334314cc8 data/tutorialmod/worldgen/configured_feature/pine.json
+3140610638959ece0452c2a069c9fa692a226df7 data/tutorialmod/worldgen/configured_feature/sapphire_ore.json
+86bbe99a604a7e18d1019a448fbff5c39c772714 data/tutorialmod/worldgen/placed_feature/pine_placed.json
+4f295d3438c738394526d339a5e7bb87f509e53c data/tutorialmod/worldgen/placed_feature/sapphire_ore_placed.json

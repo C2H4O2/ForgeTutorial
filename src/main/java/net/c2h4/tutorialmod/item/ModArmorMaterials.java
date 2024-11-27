@@ -5,13 +5,18 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     SAPPHIRE("sapphire", 26, new  int[]{ 5,7,5,4 }, 25, SoundEvents.ARMOR_EQUIP_GOLD,
-            1f, 0f, () -> Ingredient.of(ModItems.SAPPHIRE.get()));
+            1f, 0f, () -> Ingredient.of(ModItems.SAPPHIRE.get())),
+
+    EMERALD("emerald", 26, new  int[]{ 5,7,5,4 }, 25, SoundEvents.ARMOR_EQUIP_DIAMOND,
+            1f, 0f, () -> Ingredient.of(Items.EMERALD));
+
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;

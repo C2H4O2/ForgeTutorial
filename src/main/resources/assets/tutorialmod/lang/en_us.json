@@ -20,6 +20,16 @@
   "item.tutorialmod.sapphire_leggings": "Sapphire Leggings",
   "item.tutorialmod.sapphire_boots": "Sapphire Boots",
 
+  "item.tutorialmod.emerald_helmet": "Emerald Helmet",
+  "item.tutorialmod.emerald_chestplate": "Emerald Chestplate",
+  "item.tutorialmod.emerald_leggings": "Emerald Leggings",
+  "item.tutorialmod.emerald_boots": "Emerald Boots",
+
+  "item.tutorialmod.pine_boat": "Pine Boat",
+  "item.tutorialmod.pine_chest_boat": "Pine Chest Boat",
+
+  "item.tutorialmod.dice": "Dice",
+
   "block.tutorialmod.sapphire_block": "Sapphire Block",
   "block.tutorialmod.raw_sapphire_block": "Raw Sapphire Block",
   "block.tutorialmod.sapphire_ore": "Sapphire Ore",
@@ -41,10 +51,21 @@
 
   "block.tutorialmod.gem_polishing_station": "Gem Polishing Station",
 
+  "block.tutorialmod.pine_log": "Pine Log",
+  "block.tutorialmod.pine_planks": "Pine Planks",
+  "block.tutorialmod.pine_wood": "Pine Wood",
+  "block.tutorialmod.stripped_pine_log": "Stripped Pine Log",
+  "block.tutorialmod.stripped_pine_wood": "Stripped Pine Wood",
+  "block.tutorialmod.pine_leaves": "Pine Leaves",
+
+  "block.tutorialmod.pine_sign": "Pine Sign",
+  "block.tutorialmod.pine_hanging_sign": "Pine Hanging Sign",
+  "block.tutorialmod.pine_sapling": "Pine Sapling",
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground",
 
   "entity.minecraft.villager.tutorialmod.soundmaster": "Sound Master",
+  "entity.tutorialmod.mod_chest_boat" : "Boat with Chest",
 
   "sounds.tutorialmod.metal_detector_found_ore":  "Metal Detector Jingle",
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"

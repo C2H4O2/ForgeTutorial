@@ -41,6 +41,16 @@ public class ModCreativeModeTabs {
                         Output.accept(ModItems.SAPPHIRE_LEGGINGS.get());
                         Output.accept(ModItems.SAPPHIRE_BOOTS.get());
 
+                        Output.accept(ModItems.EMERALD_HELMET.get());
+                        Output.accept(ModItems.EMERALD_CHESTPLATE.get());
+                        Output.accept(ModItems.EMERALD_LEGGINGS.get());
+                        Output.accept(ModItems.EMERALD_BOOTS.get());
+
+                        Output.accept(ModItems.DICE.get());
+
+                        Output.accept(ModItems.PINE_CHEST_BOAT.get());
+                        Output.accept(ModItems.PINE_BOAT.get());
+
                         Output.accept(ModBlocks.SOUND_BLOCK.get());
 
                         Output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
@@ -63,6 +73,18 @@ public class ModCreativeModeTabs {
                         Output.accept(ModBlocks.CATMINT.get());
                         Output.accept(ModBlocks.GEM_POLISHING_STATION.get());
 
+                        Output.accept(ModBlocks.PINE_LOG.get());
+                        Output.accept(ModBlocks.PINE_WOOD.get());
+                        Output.accept(ModBlocks.STRIPPED_PINE_LOG.get());
+                        Output.accept(ModBlocks.STRIPPED_PINE_WOOD.get());
+
+                        Output.accept(ModBlocks.PINE_PLANKS.get());
+                        Output.accept(ModBlocks.PINE_LEAVES.get());
+
+                        Output.accept(ModBlocks.PINE_SIGN.get());
+                        Output.accept(ModBlocks.PINE_HANGING_SIGN.get());
+
+                        Output.accept(ModBlocks.PINE_SAPLING.get());
                     })
 
                     .build());
